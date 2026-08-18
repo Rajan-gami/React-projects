@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #7fbffb 0%, #d48df3 100%);
+  color: #111827;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 20px;
+}
+
+.counter-card {
+  width: min(760px, 90%);
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+  overflow: hidden;
+}
+
+.counter-card .card-body {
+  padding: 2.5rem 2rem;
+  text-align: center;
+}
+
+.app-content {
+  margin: 0 auto;
+}
+
+h1,
+.counter-display,
+.lead,
+.counter-value {
+  color: #111827;
+}
+
+.counter-display {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.counter-value {
+  color: #1d4ed8;
+  font-weight: 700;
+}
+
+.control-row {
+  margin-top: 16px;
+}
+
+.number-input {
+  max-width: 140px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #111827;
+  padding: 8px 12px;
+  text-align: center;
+}
+
+.number-input::placeholder {
+  color: #64748b;
+}
+
+.number-input:focus {
+  outline: 2px solid rgba(59, 130, 246, 0.4);
+  border-color: #93c5fd;
+  box-shadow: 0 0 0 4px rgba(96, 165, 250, 0.15);
+}
+
+.btn {
+  border-radius: 12px;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.12);
+}
+
+@media (max-width: 576px) {
+  .counter-card .card-body {
+    padding: 1.75rem 1rem;
+  }
+
+  .number-input {
+    max-width: 100%;
+    width: 100%;
+  }
+}

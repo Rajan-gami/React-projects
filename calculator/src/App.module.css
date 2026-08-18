@@ -1,0 +1,14 @@
+.calculator {
+  border: 2px solid rgba(90, 90, 90);
+  width: 240px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.calculator:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+  transform: scale(1.02);
+}
